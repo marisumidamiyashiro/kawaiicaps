@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>KawaiiCaps</title>
+    <meta name="description" content="A simple sassy css website starter." />
+
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ADOBE FONTS-->
+    <link rel="stylesheet" href="https://use.typekit.net/xeh2ohx.css">
+
+    <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-id">
+            <a class="logomark" href="index.html"><img src="img/logo.svg" alt="Site Name Logo" width="50" height="50"></a>
+
+            <h1 class="hide-visually"><a href="index.html">KawaiiCaps</a></h1>
+        </div>
+
+        <nav class="site-nav" data-navstate="closed">
+            <h2 class="menu-button">
+                <span class="hide-visually">Menu</span>
+                <svg width="30" height="30">
+                    <title>Menu</title>
+                    <rect id="menubar-top" y="0" width="30" height="3"></rect>
+                    <rect id="menubar-mid" y="8" width="30" height="3"></rect>
+                    <rect id="menubar-bottom" y="16" width="30" height="3"></rect>
+                </svg>
+            </h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#featuredproducts">Featured Products</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#allproducts">All Products</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section class="hero">
+            <div class="container">
+                <h1>Custom Keycaps</h1>
+                <p>Unique, handmade keycaps crafted from polymer clay.</p>
+                <a href="allproducts" class="button">View More</a>
+            </div>
+        </section>
+
+        <section id="featuredproducts">
+
+            <div class="container">
+        
+                <div class="row">
+                    <div class="one-half">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <h3>Section 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam cum quibusdam, nisi porro similique commodi quae minima optio dicta, repudiandae et ipsa odio sequi laborum!</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+        </section>
+
+        <section id="aboutus">
+            <div class="container">
+                <div class="row swapped">
+                    <div class="one-half">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <h3>Section 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam cum quibusdam, nisi porro similique commodi quae minima optio dicta, repudiandae et ipsa odio sequi laborum!</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+        </section> 
+
+        <section id="allproducts">
+            <div class="container">
+                <div class="row stacked">
+                    <div class="one-half">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <h3>Section 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam cum quibusdam, nisi porro similique commodi quae minima optio dicta, repudiandae et ipsa odio sequi laborum!</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="contactus">
+
+        <nav class="site-nav">
+            <ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#featuredproducts">Featured Products</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#allproducts">All Products</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
+
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+<!--  -->
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

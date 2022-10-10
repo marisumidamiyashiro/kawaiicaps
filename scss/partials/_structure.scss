@@ -1,0 +1,97 @@
+/* SITE STRUCTURE */
+
+.site-header {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-id {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+}
+
+/* SITE-FOOTER */
+
+.site-footer {
+    background: $color-accent-dark;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+/* SITE-NAV */
+
+// .site-nav {
+//     ul {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//     }
+//     a {
+//         display: inline-block;
+//         padding: 1em;
+//         line-height: 1;
+//     }
+// }
+
+section {
+    padding: 4em 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+/* HERO SECTION */
+
+.hero {
+    background-image: url("../img/keyboard-1.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+
+    h1 {
+        margin-bottom: .25em;
+        color: $color-text-headings-light;
+
+    }
+    p {
+        margin: 1em auto;
+    }
+}
+
+/* SECTION HEADING */ 
+
+.section-heading {
+    font-size: 1em;
+    font-family: $font-family-sans;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border-bottom: 5px solid $color-accent;
+    display: table;
+    padding: 0 0 .5em 0;
+    margin: 1em auto 3em auto;
+}

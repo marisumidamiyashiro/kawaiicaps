@@ -1,0 +1,34 @@
+/* RESET BODY */
+body {
+    margin: 0;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* MEDIA QUERIES */
+
+/* RESPONSVIE TYPE */ 
+
+// SMALL
+
+body {
+    font-size: 87.5%;
+}
+
+@media (min-width: $breakpoint-small) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-medium) {
+    body {
+        font-size: 112.5%;
+    }
+}
