@@ -28,7 +28,7 @@
 /* SITE-FOOTER */
 
 .site-footer {
-    background: $color-accent-dark;
+    background: $color-text-background;
     display: flex;
     padding: 1em;
     justify-content: center;
@@ -38,21 +38,6 @@
         text-decoration: none;
     }
 }
-
-/* SITE-NAV */
-
-// .site-nav {
-//     ul {
-//         margin: 0;
-//         padding: 0;
-//         list-style: none;
-//     }
-//     a {
-//         display: inline-block;
-//         padding: 1em;
-//         line-height: 1;
-//     }
-// }
 
 section {
     padding: 4em 0;
@@ -65,7 +50,7 @@ section {
 /* HERO SECTION */
 
 .hero {
-    background-image: url("../img/keyboard-1.jpg");
+    background-image: url("../img/marcel-strauss-rd9bLSvglVI-unsplash.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -94,4 +79,9 @@ section {
     display: table;
     padding: 0 0 .5em 0;
     margin: 1em auto 3em auto;
+}
+
+.site-main {
+    display: flex;
+    flex-direction: column;
 }
