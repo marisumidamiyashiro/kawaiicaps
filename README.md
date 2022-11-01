@@ -1,4 +1,4 @@
 # kawaiicaps
 
 
-[demo](https://marisumidamiyashiro.github.io/kawaiicaps/)
+[view site](https://marisumidamiyashiro.github.io/kawaiicaps/)
