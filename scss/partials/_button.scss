@@ -1,17 +1,23 @@
 /* BUTTONS */
 
 .button {
+    font-family: $font-family-body;
+    font-weight: 500;
     display: inline-block;
     background-color: $color-accent-light;
-    color: $color-text-body;
+    color: $color-body-primary-dark;
     text-decoration: none;
     padding: 1em;
-    border-radius: 5px;
+    border-radius: 25px;
     text-transform: uppercase;
+    border: 2px solid $color-body-primary-dark;
 
     &:hover {
         background-color: $color-accent-dark;
     }
 
 }
+
+
+
 

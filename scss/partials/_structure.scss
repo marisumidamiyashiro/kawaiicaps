@@ -28,7 +28,7 @@
 /* SITE-FOOTER */
 
 .site-footer {
-    background: $color-text-background;
+    background: $color-body-primary-dark;
     display: flex;
     padding: 1em;
     justify-content: center;
@@ -53,13 +53,13 @@ section {
     background-image: url("/img/KawaiiCaps_Hero.jpg");
     background-position: center;
     background-size: cover;
-    text-align: center;
+    text-align: left;
     min-height: 100vh;
     display: flex;
 
     h1 {
         margin-bottom: .25em;
-        color: $color-text-headings-light;
+        color: $color-body-primary-light;
 
     }
     p {
@@ -71,11 +71,11 @@ section {
 
 .section-heading {
     font-size: 1em;
-    font-family: $font-family-sans;
+    font-family: $font-family-body;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .05em;
-    border-bottom: 5px solid $color-accent;
+    border-bottom: 5px solid $color-accent-dark;
     display: table;
     padding: 0 0 .5em 0;
     margin: 1em auto 3em auto;

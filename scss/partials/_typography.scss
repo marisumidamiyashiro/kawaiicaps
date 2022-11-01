@@ -1,17 +1,17 @@
 /* BASE TEXT COLORS */
 
 body {
-    color: $color-text-body;
+    color: $color-body-primary-dark;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $color-text-headings;
+    color: $color-body-primary-dark;
 }
 
 /* BASE TEXT FONTS */
 
 body {
-    font-family: $font-family-sans;
+    font-family: $font-family-body;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +68,7 @@ hr {
     font-weight: 400;
     line-height: 1;
     margin: 0;
-    color: $color-accent;
+    color: $color-accent-dark;
 }
 
 .subheadline {

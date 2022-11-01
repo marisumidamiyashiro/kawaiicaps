@@ -12,7 +12,7 @@
         margin: 0;
         font-size: 1.5em;
         line-height: 1;
-        z-index: 20;
+        z-index: 200;
         cursor: pointer;
 
         svg {
@@ -27,16 +27,18 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: rgb(0, 0, 0);
+        background-color: $color-body-primary-dark;
+        color: $color-body-primary-light;
         position: fixed;
         top: 0;
         right: 0;
-        width: 100%;
+        width: 50%;
         height: 100vh;
+        border-radius: 25px 0 0 25px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         transform: translate(100%,0);
         transition: all .3s ease-out;
     }
@@ -47,6 +49,15 @@
         transform: translate(10%,0);
         transition: all .3s ease-out .3s;
         opacity: 0;
+        margin-left: 10vw;
+    }
+
+    a {
+        color: $color-body-primary-light;
+        font-family: $font-family-title;
+    }
+    a:hover {
+        color: $color-accent-dark;
     }
 
     &[data-navstate="open"] {
