@@ -32,6 +32,7 @@ $border-radius: 25px;
 
 // IMPORTS
 
+@import "partials/animation";
 @import "partials/typography";
 @import "partials/helpers";
 @import "partials/button";
@@ -40,6 +41,7 @@ $border-radius: 25px;
 @import "partials/grid";
 @import "partials/structure";
 @import "partials/sitenav";
+
 
 // GLOBAL SITE STYLES
 

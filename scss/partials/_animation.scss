@@ -33,7 +33,7 @@
 }
 
 /* ANIMATE SECTION 1 ON SCROLL */
-#featured.scroll-triggered[data-sectionstate="inactive"] {
+#featured.scroll-triggered[data-sectionstate="active"] {
     .jd-contentblock-image {
         transform: translateX(-200px);
         opacity: 0;
@@ -58,7 +58,7 @@
 }
 
 /* ANIMATE SECTION 2 ON SCROLL */
-#about.scroll-triggered[data-sectionstate="active"] {
+#about.scroll-triggered[data-sectionstate="inactive"] {
 
     background-color: #888;
 
