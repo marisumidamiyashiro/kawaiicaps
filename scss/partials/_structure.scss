@@ -6,7 +6,7 @@
     padding: 1em;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
 
     .site-id {
         display: flex;
@@ -56,7 +56,7 @@ section {
     text-align: left;
     min-height: 100vh;
     display: flex;
-
+    
     h1 {
         margin-bottom: .25em;
         color: $color-body-primary-light;

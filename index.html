@@ -4,13 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <title>KawaiiCaps</title>
-    <meta name="description" content="Custom keycaps." />
+    <meta name="description" content="Custom keyboard caps that make your desktop setup super cool!" />
 
     <!-- VIEWPORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- FAS FA ICONS -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
     <!-- ADOBE FONTS-->
-    <link rel="stylesheet" href="https://use.typekit.net/jnb7rwg.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rcr8fei.css">
 
     <!-- MAIN CSS -->
     <link href="css/style.css" rel="stylesheet" />
@@ -18,9 +21,9 @@
 
 <body>
 
-    <header class="site-header">
+    <header id="home" class="site-header drawer">
         <div class="site-id">
-            <a class="logomark" href="index.html"><img src="img/kawaiicaps_logov4.svg" alt="Site Name Logo" width="100" height="100"></a>
+            <a class="logomark" href="#home">[ logo ]</a>
 
             <h1 class="hide-visually"><a href="index.html">KawaiiCaps</a></h1>
         </div>
@@ -36,78 +39,99 @@
                 </svg>
             </h2>
             <ul>
-                <li><a href="#featuredproducts">Featured Products</a></li>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#allproducts">All Products</a></li>
-                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="#featured">Featured Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">All Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="site-main">
-        <section class="hero">
+        <section class="hero animate-on-scroll">
             <div class="container">
                 <h1>Custom Keycaps</h1>
-                <p>Unique keycaps handcrafted from polymer clay</p>
-                <a href="#allproducts" class="button">Browse Keycaps</a>
+                <p>Unique keycaps hand crafted from polymer clay.</p>
+                <a href="#products" class="button">Browse Keycaps</a>
             </div>
         </section>
 
-        <section id="featuredproducts">
+        <section id="featured" class="scroll-triggered">
 
             <div class="container">
-        
-                <div class="row">
-                    <div class="one-half">
-                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
-                    </div>
-                    <div class="one-half">
-                        <h3>Featured Products</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam cum quibusdam, nisi porro similique commodi quae minima optio dicta, repudiandae et ipsa odio sequi laborum!</p>
-                        <a href="#" class="button">Button</a>
-                    </div>
-                </div>
+
+                <h2>Featured Products</h2>
+
+                <a href="#" class="arrow-left"><i class='fas fa-caret-left'></i></a>
+
+                [ Swiper Carousel Goes Here ]
+                <a href="#" class="arrow-right"><i class='fas fa-caret-right'></i></a>
+                
+
+            </div>
+
         </section>
 
-        <section id="aboutus">
-            <div class="container">
-                <div class="row full-width">
-                    <div class="one-half">
-                        <h3>About Us</h3>
-                        <p>KawaiiCaps specializes in quality keycaps that fit most standard keyboards. Made from polymer clay, our custom keycaps are designed with your inner child in mind. With our keycaps you will be able to express yourself at your computer! </p>
-                    </div>
+        <section id="about" class="scroll-triggered">
+            <div class="row full-width">
+                <div class="one-half push-one-half jd-contentblock-text">
+                    <h2>About Us</h2>
+                    <p>KawaiiCaps specializes in quality keycaps that fit most standard keyboards. Made from polymer clay, our custom keycaps are designed with your inner child in mind. With our keycaps you will be able to express yourself at your computer!</p>
                 </div>
-        </section> 
+            </div>
+        </section>
 
-        <section id="allproducts">
+        <section id="products" class="scroll-triggered">
             <div class="container">
-                <div class="row stacked">
-                    <div class="one-half">
-                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
-                    </div>
-                    <div class="one-half">
-                        <h3>All Products</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam cum quibusdam, nisi porro similique commodi quae minima optio dicta, repudiandae et ipsa odio sequi laborum!</p>
-                    </div>
-                </div>
+
+                <h2>All Products</h2>
+
+                <h3>Video Games</h3>
+
+                <ul class="product-cards">
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                </ul>
+
+                <h3>Sanrio Character</h3>
+
+                <ul class="product-cards">
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                </ul>
+
+                <h3>Misc</h3>
+
+                <ul class="product-cards">
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                    <li><a href="#">image goes here</a></li>
+                </ul>
+
+            </div>
         </section>
 
     </main>
 
-    <footer class="site-footer" id="contactus">
+    <footer id="contact" class="site-footer">
         <h2>Contact Us</h2>
+        [ image of computer goes here ]
         <form action="">
-            form goes here
+            [ form goes here ]
         </form>
-
         <nav class="site-nav">
             <ul>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#featuredproducts">Featured Products</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
-                    <li><a href="#allproducts">All Products</a></li>
-                    <li><a href="#contactus">Contact Us</a></li>
+                    <li><a href="subpage.html">Subpage</a></li>
                 </ul>
             </ul>
         </nav>
@@ -123,8 +147,8 @@
         });
     </script>
 
-<!-- JAVASCRIPT -->
-<script src="js/script.js"></script>
+    <!--  -->
+    <script src="js/script.js"></script>
 
 </body>
 
