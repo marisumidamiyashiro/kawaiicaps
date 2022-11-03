@@ -697,7 +697,14 @@ section {
   list-style: none;
 }
 .product-cards img {
+  margin: 25px;
   border-radius: 25px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.product-cards img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 /* SITE-HEADER SITE-NAV */

@@ -116,6 +116,12 @@ section {
     list-style: none;
 
     img {
+        margin: 25px;
         border-radius: $border-radius;
+        transition: all .2s ease-in;
+    }
+
+    img:hover {
+        transform: scale(1.5);
     }
 }
