@@ -85,3 +85,14 @@ section {
     display: flex;
     flex-direction: column;
 }
+
+/* ABOUT US */
+
+.aboutus {
+    background-image: url("/img/KawaiiCaps_Hero3.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+}
