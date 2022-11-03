@@ -176,8 +176,12 @@ body {
   font-family: input-serif-condensed, serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: puffin-arcade-liquid, sans-serif;
+}
+
+h3 {
+  font-family: input-serif-narrow, serif;
 }
 
 /* BASE TYPOGRAPHY */
@@ -202,7 +206,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.2;
 }
 
@@ -629,6 +633,9 @@ section {
   display: -ms-flexbox;
   display: flex;
 }
+.hero .container {
+  margin: 15em;
+}
 .hero h1 {
   margin-bottom: 0.25em;
   color: rgb(80, 54, 42);
@@ -660,6 +667,13 @@ section {
           flex-direction: column;
 }
 
+/* FEATURED PRODUCTS */
+.featured {
+  background: rgb(252, 228, 208);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 218, 196)), to(rgb(0, 0, 0)));
+  background: linear-gradient(180deg, rgb(254, 218, 196) 0%, rgb(0, 0, 0) 100%);
+}
+
 /* ABOUT US */
 .aboutus {
   background-image: url("../img/KawaiiCaps_Hero3.jpg");
@@ -670,6 +684,20 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+/* PRODUCTS */
+.product-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+.product-cards img {
+  border-radius: 25px;
 }
 
 /* SITE-HEADER SITE-NAV */

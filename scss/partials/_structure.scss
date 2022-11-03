@@ -56,6 +56,10 @@ section {
     text-align: left;
     min-height: 100vh;
     display: flex;
+
+    .container {
+        margin: 15em;
+    }
     
     h1 {
         margin-bottom: .25em;
@@ -86,6 +90,13 @@ section {
     flex-direction: column;
 }
 
+/* FEATURED PRODUCTS */
+
+.featured {
+    background: rgb(252,228,208);
+    background: linear-gradient(180deg, rgba(254,218,196,1) 0%, rgba(0,0,0,1) 100%);
+}
+
 /* ABOUT US */
 
 .aboutus {
@@ -95,4 +106,16 @@ section {
     text-align: left;
     min-height: 100vh;
     display: flex;
+}
+
+/* PRODUCTS */
+
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    img {
+        border-radius: $border-radius;
+    }
 }
