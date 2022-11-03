@@ -319,7 +319,7 @@ hr {
   background-color: rgb(255, 245, 228);
   color: rgb(80, 54, 42);
   text-decoration: none;
-  padding: 0.1em 0.7em 0.1em 0.8em;
+  padding: 0.2em 0.25em 0 0.3em;
   border-radius: 25px;
   text-transform: uppercase;
   -webkit-transform-style: preserve-3d;
@@ -381,7 +381,7 @@ hr {
   background-color: rgb(255, 245, 228);
   color: rgb(80, 54, 42);
   text-decoration: none;
-  padding: 0.1em 0.8em 0.1em 0.7em;
+  padding: 0.2em 0.3em 0 0.25em;
   border-radius: 25px;
   text-transform: uppercase;
   -webkit-transform-style: preserve-3d;
