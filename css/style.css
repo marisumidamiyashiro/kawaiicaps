@@ -687,6 +687,10 @@ section {
 }
 
 /* PRODUCTS */
+.products h2 {
+  text-align: center;
+}
+
 .product-cards {
   display: -webkit-box;
   display: -ms-flexbox;
