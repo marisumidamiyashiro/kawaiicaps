@@ -26,6 +26,142 @@ TABLE OF CONTENTS
           box-sizing: border-box;
 }
 
+/* CSS ANIMATIONS */
+/* ANIMATE THE HERO ON LOAD */
+.hero h1 {
+  -webkit-animation-name: jd-scaleup;
+          animation-name: jd-scaleup;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+.hero p {
+  -webkit-animation-name: jd-scaleup;
+          animation-name: jd-scaleup;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+.hero .button-group a {
+  -webkit-animation-name: jd-scaleup;
+          animation-name: jd-scaleup;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+.hero .button-group a:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.hero .button-group a:nth-child(2) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.hero .button-group a:nth-child(3) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes jd-scaleup {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes jd-scaleup {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+/* ANIMATE SECTION 1 ON SCROLL */
+#featured.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  opacity: 0;
+}
+#featured.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  opacity: 0;
+}
+
+#featured.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+}
+#featured.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+}
+
+/* ANIMATE SECTION 2 ON SCROLL */
+#about.scroll-triggered[data-sectionstate=inactive] {
+  background-color: #888;
+}
+#about.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  opacity: 0;
+}
+#about.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  opacity: 0;
+}
+
+#about.scroll-triggered[data-sectionstate=active] {
+  background-color: #000;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+#about.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+#about.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: #FADCA7;
+  padding: 3em;
+  border-radius: 25px;
+}
+
 /* BASE TEXT COLORS */
 body {
   color: rgb(80, 54, 42);
