@@ -104,6 +104,8 @@ section {
     background-image: url("../img/KawaiiCaps_Hero3.jpg");
     background-position: center;
     background-size: cover;
+    font-family: $font-family-body;
+    color: $color-body-primary-dark;
     text-align: left;
     min-height: 100vh;
     display: flex;

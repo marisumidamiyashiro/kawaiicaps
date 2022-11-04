@@ -26,6 +26,31 @@ TABLE OF CONTENTS
           box-sizing: border-box;
 }
 
+/* FEATURED PRODUCTS CAROUSEL */
+.featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.featured h2 {
+  padding: 3em;
+}
+.featured img {
+  border-radius: 25px;
+}
+.featured .caption {
+  font-family: input-serif-narrow, serif;
+  font-size: 115%;
+  color: rgb(255, 245, 228);
+  padding: 2em;
+}
+.featured span {
+  cursor: pointer;
+}
+
 /* CSS ANIMATIONS */
 /* ANIMATE THE HERO ON LOAD */
 .hero h1 {
@@ -680,6 +705,8 @@ section {
   background-image: url("../img/KawaiiCaps_Hero3.jpg");
   background-position: center;
   background-size: cover;
+  font-family: input-serif-condensed, serif;
+  color: rgb(80, 54, 42);
   text-align: left;
   min-height: 100vh;
   display: -webkit-box;
@@ -822,8 +849,4 @@ section {
   display: inline-block;
   padding: 1em;
   line-height: 1;
-}
-
-body {
-  background-color: rgb(255, 245, 228);
 }

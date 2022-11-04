@@ -32,6 +32,7 @@ $border-radius: 25px;
 
 // IMPORTS
 
+@import "partials/carousel";
 @import "partials/animation";
 @import "partials/typography";
 @import "partials/helpers";
@@ -42,10 +43,4 @@ $border-radius: 25px;
 @import "partials/structure";
 @import "partials/sitenav";
 
-
-// GLOBAL SITE STYLES
-
-body {
-    background-color: $color-body-background;
-}
 
