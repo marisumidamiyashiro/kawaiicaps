@@ -1,0 +1,134 @@
+/* SITE STRUCTURE */
+
+.site-header {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+
+    .site-id {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+}
+
+/* SITE-FOOTER */
+
+.site-footer {
+    background: $color-body-primary-dark;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+section {
+    padding: 4em 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+/* HERO SECTION */
+
+.hero {
+    background-image: url("../img/KawaiiCaps_Hero.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+
+    .container {
+        margin: 15em;
+    }
+    
+    h1 {
+        margin-bottom: .25em;
+        color: $color-body-primary-dark;
+
+    }
+    p {
+        margin: 1em auto;
+    }
+}
+
+/* SECTION HEADING */ 
+
+.section-heading {
+    font-size: 1em;
+    font-family: $font-family-body;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border-bottom: 5px solid $color-accent-dark;
+    display: table;
+    padding: 0 0 .5em 0;
+    margin: 1em auto 3em auto;
+}
+
+.site-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FEATURED PRODUCTS */
+
+.featured {
+    text-align: center;
+    background: rgb(252,228,208);
+    background: linear-gradient(180deg, rgba(254,218,196,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+/* ABOUT US */
+
+.aboutus {
+    background-image: url("../img/KawaiiCaps_Hero3.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: $font-family-body;
+    color: $color-body-primary-dark;
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* PRODUCTS */
+
+.products h2 {
+    text-align: center;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    img {
+        margin: 25px;
+        border-radius: $border-radius;
+        transition: all .2s ease-in;
+    }
+
+    img:hover {
+        transform: scale(1.5);
+    }
+}
