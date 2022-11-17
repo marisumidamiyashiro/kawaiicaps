@@ -748,7 +748,7 @@ section {
   margin: 0;
   font-size: 1.5em;
   line-height: 1;
-  z-index: 300;
+  z-index: 500;
   cursor: pointer;
 }
 .site-header .site-nav .menu-button svg {
