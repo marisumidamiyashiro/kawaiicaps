@@ -62,25 +62,7 @@
                 
                 <h2>Featured Products</h2>
 
-                <div id="featured-carousel" class="carousel slide" data-ride="carousel">
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active"><img src="img/SootSprite.jpg" alt="Soot Sprite" width="300px">
-                            <div class="caption">
-                                Soot Sprite
-                            </div>
-                        </div>
-
-                        <div class="carousel-item"><img src="img/Keroppi.jpg" alt="Soot Sprite" width="300px">
-                            <div class="caption">
-                                Keroppi
-                            </div>
-                        </div>
-                        <div class="carousel-item"><img src="img/Slime.jpg" alt="Soot Sprite" width="300px">
-                            <div class="caption">
-                                Maplestory Slime
-                            </div>
-                        </div>    
+                <div id="featured" class="carousel slide">
         
 
                     <a href="#featured-carousel" class="carousel-control-prev" data-slide="prev">
@@ -150,9 +132,22 @@
     <footer id="contact" class="site-footer">
         <h2>Contact Us</h2>
         [ image of computer goes here ]
-        <form action="">
-            [ form goes here ]
+
+            <form>
+
+                <label for="contact_name">Name:</label>
+                <input type="text" id="contact_name" name="contact_name" />
+    
+                <label for="email">Email Address:</label>
+                <input type="text" id="contact_email" name="contact_email" />
+    
+                <label for="contact_message">Message:</label>
+                <textarea type="text" id="contact_message" name="contact_message"></textarea>
+    
+                <input type="submit" value="Submit" />
+
         </form>
+
         <nav class="site-nav">
             <ul>
                 <ul>

@@ -37,6 +37,7 @@
         color: white;
         text-decoration: none;
     }
+
 }
 
 section {
@@ -113,8 +114,8 @@ section {
 
 /* PRODUCTS */
 
-.products h2 {
-    text-align: center;
+.products {
+    background: $color-body-primary-dark;
 }
 
 .product-cards {
@@ -130,5 +131,15 @@ section {
 
     img:hover {
         transform: scale(1.5);
+    }
+}
+
+/* FOOTER */
+
+.site-footer {
+    color: white;
+
+    h2 {
+        color: $color-accent-dark;
     }
 }
