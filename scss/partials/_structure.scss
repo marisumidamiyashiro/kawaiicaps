@@ -138,6 +138,8 @@ section {
 
 .site-footer {
     color: white;
+    display: flex;
+    flex-direction: column;
 
     h2 {
         color: $color-accent-dark;
