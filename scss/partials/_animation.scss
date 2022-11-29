@@ -1,0 +1,16 @@
+
+#about.scroll-triggered[data-sectionstate="active"] {
+
+    background-color: #000;
+    transition: all 1s ease-out;
+
+    .jd-contentblock-text {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s ease-out;
+    background-color: $color-accent-dark;
+    padding: 3em;
+    border-radius: $border-radius;
+    }
+
+}
