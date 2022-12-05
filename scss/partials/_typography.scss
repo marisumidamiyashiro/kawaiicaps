@@ -1,25 +1,25 @@
 /* BASE TEXT COLORS */
 
 body {
-    color: $color-body-primary-dark;
+    color: rgba(80, 54, 42, 1);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $color-body-primary-dark;
+    color: rgba(80, 54, 42, 1);
 }
 
 /* BASE TEXT FONTS */
 
 body {
-    font-family: $font-family-body;
+    font-family: input-serif-condensed, serif;
 }
 
 h1, h2 {
-    font-family: $font-family-title;
+    font-family: puffin-arcade-liquid, sans-serif;
 }
 
 h3 {
-    font-family: $font-family-min;
+    font-family: input-serif-narrow, serif;;
 }
 
 /* BASE TYPOGRAPHY */
@@ -72,7 +72,7 @@ hr {
     font-weight: 400;
     line-height: 1;
     margin: 0;
-    color: $color-accent-dark;
+    color: rgba(250, 220, 167, 1);
 }
 
 .subheadline {
@@ -80,5 +80,5 @@ hr {
     font-weight: 400;
     line-height: 1.1;
     margin: .25em 0;
-    color: $color-lightgrey;
+    color: rgba(0, 0 ,0, .5);
 }

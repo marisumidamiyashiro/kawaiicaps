@@ -8,7 +8,7 @@
         position: absolute;
         top: .75em;
         right: .75em;
-        color: $color-body-primary-dark;
+        color: rgba(80, 54, 42, 1);
         margin: 0;
         font-size: 1.5em;
         line-height: 1;
@@ -16,7 +16,7 @@
         cursor: pointer;
 
         svg {
-            fill: $color-body-primary-dark;
+            fill: rgba(80, 54, 42, 1);
             rect {
                 transition: all .3s ease-out;
                 }
@@ -27,8 +27,8 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: $color-body-primary-dark;
-        color: $color-body-primary-light;
+        background-color: rgba(80, 54, 42, 1);
+        color: rgba(255, 245, 228, 1);
         position: fixed;
         top: 0;
         right: 0;
@@ -53,11 +53,11 @@
     }
 
     a {
-        color: $color-body-primary-light;
-        font-family: $font-family-title;
+        color: rgba(255, 245, 228, 1);
+        font-family: puffin-arcade-liquid, sans-serif;
     }
     a:hover {
-        color: $color-accent-dark;
+        color: rgba(250, 220, 167, 1);
     }
 
     &[data-navstate="open"] {
@@ -66,7 +66,7 @@
             position: fixed;
 
             svg {
-                fill: $color-body-primary-light;
+                fill: rgba(255, 245, 228, 1);
             }
         }
 

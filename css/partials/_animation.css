@@ -1,0 +1,93 @@
+/* CSS ANIMATIONS */
+/* ANIMATE THE HERO ON LOAD */
+.hero h1 {
+		animation-name: jd-scaleup;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+}
+.hero p {
+		animation-name: jd-scaleup;
+		animation-duration: 2s;
+		animation-delay: 0.5s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+}
+.hero .button-group a {
+		animation-name: jd-scaleup;
+		animation-duration: 2s;
+		animation-delay: 3s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+}
+.hero .button-group a:nth-child(1) {
+		animation-delay: 1s;
+}
+.hero .button-group a:nth-child(2) {
+		animation-delay: 1.5s;
+}
+.hero .button-group a:nth-child(3) {
+		animation-delay: 2s;
+}
+
+@keyframes jd-scaleup {
+		0% {
+				transform: scale(0.9);
+				opacity: 0;
+		}
+		100% {
+				transform: scale(1);
+				opacity: 1;
+		}
+}
+/* ANIMATE SECTION 1 ON SCROLL */
+#featured.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+		transform: translateX(-200px);
+		opacity: 0;
+}
+#featured.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+		transform: translateX(200px);
+		opacity: 0;
+}
+
+#featured.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+		opacity: 1;
+		transform: translateX(0px);
+		transition: all 1s ease-out 0.5s;
+}
+#featured.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+		opacity: 1;
+		transform: translateX(0px);
+		transition: all 1s ease-out 0.5s;
+}
+
+/* ANIMATE SECTION 2 ON SCROLL */
+#about.scroll-triggered[data-sectionstate=inactive] {
+		background-color: #888;
+}
+#about.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-image {
+		transform: translateY(200px);
+		opacity: 0;
+}
+#about.scroll-triggered[data-sectionstate=inactive] .jd-contentblock-text {
+		transform: translateY(-200px);
+		opacity: 0;
+}
+
+#about.scroll-triggered[data-sectionstate=active] {
+		background-color: #000;
+		transition: all 1s ease-out;
+}
+#about.scroll-triggered[data-sectionstate=active] .jd-contentblock-image {
+		opacity: 1;
+		transform: translateY(0px);
+		transition: all 1s ease-out;
+}
+#about.scroll-triggered[data-sectionstate=active] .jd-contentblock-text {
+		opacity: 1;
+		transform: translateY(0px);
+		transition: all 1s ease-out;
+		background-color: #FADCA7;
+		padding: 3em;
+		border-radius: 25px;
+}

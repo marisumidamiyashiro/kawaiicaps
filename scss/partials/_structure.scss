@@ -28,7 +28,7 @@
 /* SITE-FOOTER */
 
 .site-footer {
-    background: $color-body-primary-dark;
+    background: rgba(80, 54, 42, 1);
     display: flex;
     padding: 1em;
     justify-content: center;
@@ -64,7 +64,7 @@ section {
     
     h1 {
         margin-bottom: .25em;
-        color: $color-body-primary-dark;
+        color: rgba(80, 54, 42, 1);
 
     }
     p {
@@ -76,11 +76,11 @@ section {
 
 .section-heading {
     font-size: 1em;
-    font-family: $font-family-body;
+    font-family: input-serif-condensed, serif;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .05em;
-    border-bottom: 5px solid $color-accent-dark;
+    border-bottom: 5px solid rgba(250, 220, 167, 1);
     display: table;
     padding: 0 0 .5em 0;
     margin: 1em auto 3em auto;
@@ -97,7 +97,19 @@ section {
     text-align: center;
     background: rgb(252,228,208);
     background: linear-gradient(180deg, rgba(254,218,196,1) 0%, rgba(0,0,0,1) 100%);
+
+    img {
+        margin: 25px;
+        border-radius: 25px;
+        transition: all .2s ease-in;
+    }
+
+    img:hover {
+        transform: scale(1.5);
+    }
 }
+
+
 
 /* ABOUT US */
 
@@ -105,8 +117,8 @@ section {
     background-image: url("../img/KawaiiCaps_Hero3.jpg");
     background-position: center;
     background-size: cover;
-    font-family: $font-family-body;
-    color: $color-body-primary-dark;
+    font-family: input-serif-condensed, serif;
+    color: rgba(80, 54, 42, 1);
     text-align: left;
     min-height: 100vh;
     display: flex;
@@ -115,7 +127,7 @@ section {
 /* PRODUCTS */
 
 .products {
-    background: $color-body-primary-light;
+    background: rgba(255, 245, 228, 1);
 }
 
 .product-cards {
@@ -125,7 +137,7 @@ section {
 
     img {
         margin: 25px;
-        border-radius: $border-radius;
+        border-radius: 25px;
         transition: all .2s ease-in;
     }
 
@@ -142,6 +154,6 @@ section {
     flex-direction: column;
 
     h2 {
-        color: $color-accent-dark;
+        color: rgba(250, 220, 167, 1);
     }
 }

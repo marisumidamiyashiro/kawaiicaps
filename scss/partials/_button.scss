@@ -2,17 +2,17 @@
 
 .button {
     position: relative;
-    font-family: $font-family-body;
+    font-family: input-serif-condensed, serif;
     font-weight: 500;
     display: inline-block;
-    background-color: $color-body-background;
-    color: $color-body-primary-dark;
+    background-color: rgba(255, 245, 228, 1);
+    color: rgba(80, 54, 42, 1);
     text-decoration: none;
     padding: 1em;
-    border-radius: $border-radius;
+    border-radius: 25px;
     text-transform: uppercase;
     transform-style: preserve-3d;
-    border: 3px solid $color-body-primary-dark;
+    border: 3px solid rgba(80, 54, 42, 1);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 150ms cubic-bezier(0, 0, 0.58, 1);
     &::before {
         position: absolute;
@@ -23,15 +23,15 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: $color-accent-light;
+        background: rgba(174, 137, 128, 1);
         border-radius: inherit;
-        box-shadow: 0 0 0 2px $color-body-primary-dark, 0 0.625em 0 0 $color-body-primary-dark;
+        box-shadow: 0 0 0 2px rgba(80, 54, 42, 1), 0 0.625em 0 0 rgba(80, 54, 42, 1);
         transform: translate3d(0, 0.75em, -1em);
         transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
     }
 
     &:hover {
-        background-color: $color-accent-dark;
+        background-color: rgba(250, 220, 167, 1);
         transform: translate(0, 0.25em);
         &::before {
             box-shadow: 0 0 0 2px, 0 0.5em 0 0;
@@ -39,8 +39,8 @@
         }
     }
     &:active {
-        background: $color-body-primary-dark;
-        color: $color-body-background;
+        background: rgba(80, 54, 42, 1);
+        color: rgba(255, 245, 228, 1);
         transform: translate(0em, 0.75em);
         &::before {
             box-shadow: 0 0 0 2px, 0 0;
@@ -56,14 +56,14 @@
     position: relative;
     font-size: 3em;
     display: inline-block;
-    background-color: $color-body-background;
-    color: $color-body-primary-dark;
+    background-color: rgba(255, 245, 228, 1);
+    color: rgba(80, 54, 42, 1);
     text-decoration: none;
     padding: .2em .25em 0 .3em;
-    border-radius: $border-radius;
+    border-radius: 25px;
     text-transform: uppercase;
     transform-style: preserve-3d;
-    border: 3px solid $color-body-primary-dark;
+    border: 3px solid rgba(80, 54, 42, 1);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 150ms cubic-bezier(0, 0, 0.58, 1);
     &::before {
         position: absolute;
@@ -74,15 +74,15 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: $color-accent-light;
+        background: rgba(174, 137, 128, 1);
         border-radius: inherit;
-        box-shadow: 0 0 0 2px $color-body-primary-dark, 0 0.2em 0 0 $color-body-primary-dark;
+        box-shadow: 0 0 0 2px rgba(80, 54, 42, 1), 0 0.2em 0 0 rgba(80, 54, 42, 1);
         transform: translate3d(0, 0.25em, -1em);
         transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
     }
 
     &:hover {
-        background-color: $color-accent-dark;
+        background-color: rgba(250, 220, 167, 1);
         transform: translate(0, 0.2em);
         &::before {
             box-shadow: 0 0 0 2px, 0 0.1em 0 0;
@@ -90,8 +90,8 @@
         }
     }
     &:active {
-        background: $color-body-primary-dark;
-        color: $color-body-background;
+        background: rgba(80, 54, 42, 1);
+        color: rgba(255, 245, 228, 1);
         transform: translate(0em, 0.75em);
         &::before {
             box-shadow: 0 0 0 2px, 0 0;
