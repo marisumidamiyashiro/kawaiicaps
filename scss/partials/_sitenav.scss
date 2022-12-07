@@ -8,7 +8,7 @@
         position: absolute;
         top: .75em;
         right: .75em;
-        color: rgba(80, 54, 42, 1);
+        color: $color-body-primary-dark;
         margin: 0;
         font-size: 1.5em;
         line-height: 1;
@@ -16,7 +16,7 @@
         cursor: pointer;
 
         svg {
-            fill: rgba(80, 54, 42, 1);
+            fill: $color-body-primary-dark;
             rect {
                 transition: all .3s ease-out;
                 }
@@ -27,14 +27,14 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: rgba(80, 54, 42, 1);
-        color: rgba(255, 245, 228, 1);
+        background-color: $color-body-primary-dark;
+        color: $color-body-primary-light;
         position: fixed;
         top: 0;
         right: 0;
         width: 50%;
         height: 100vh;
-        border-radius: 25px 0 0 25px;
+        border-radius: $border-radius 0 0 $border-radius;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -53,11 +53,11 @@
     }
 
     a {
-        color: rgba(255, 245, 228, 1);
-        font-family: puffin-arcade-liquid, sans-serif;
+        color: $color-body-primary-light;
+        font-family: $font-family-title;
     }
     a:hover {
-        color: rgba(250, 220, 167, 1);
+        color: $color-accent-dark;
     }
 
     &[data-navstate="open"] {
@@ -66,7 +66,7 @@
             position: fixed;
 
             svg {
-                fill: rgba(255, 245, 228, 1);
+                fill: $color-body-primary-light;
             }
         }
 

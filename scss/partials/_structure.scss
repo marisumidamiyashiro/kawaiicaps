@@ -28,7 +28,7 @@
 /* SITE-FOOTER */
 
 .site-footer {
-    background: rgba(80, 54, 42, 1);
+    background: $color-body-primary-dark;
     display: flex;
     padding: 1em;
     justify-content: center;
@@ -64,7 +64,7 @@ section {
     
     h1 {
         margin-bottom: .25em;
-        color: rgba(80, 54, 42, 1);
+        color: $color-body-primary-dark;
 
     }
     p {
@@ -76,11 +76,11 @@ section {
 
 .section-heading {
     font-size: 1em;
-    font-family: input-serif-condensed, serif;
+    font-family: $font-family-body;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .05em;
-    border-bottom: 5px solid rgba(250, 220, 167, 1);
+    border-bottom: 5px solid $color-accent-dark;
     display: table;
     padding: 0 0 .5em 0;
     margin: 1em auto 3em auto;
@@ -99,8 +99,8 @@ section {
     background: linear-gradient(180deg, rgba(254,218,196,1) 0%, rgba(0,0,0,1) 100%);
 
     img {
-        margin: 25px;
-        border-radius: 25px;
+        margin: $border-radius;
+        border-radius: $border-radius;
         transition: all .2s ease-in;
     }
 
@@ -117,8 +117,8 @@ section {
     background-image: url("../img/KawaiiCaps_Hero3.jpg");
     background-position: center;
     background-size: cover;
-    font-family: input-serif-condensed, serif;
-    color: rgba(80, 54, 42, 1);
+    font-family: $font-family-body;
+    color: $color-body-primary-dark;
     text-align: left;
     min-height: 100vh;
     display: flex;
@@ -127,7 +127,7 @@ section {
 /* PRODUCTS */
 
 .products {
-    background: rgba(255, 245, 228, 1);
+    background: $color-body-primary-light;
 }
 
 .product-cards {
@@ -136,8 +136,8 @@ section {
     list-style: none;
 
     img {
-        margin: 25px;
-        border-radius: 25px;
+        margin: $border-radius;
+        border-radius: $border-radius;
         transition: all .2s ease-in;
     }
 
@@ -154,6 +154,6 @@ section {
     flex-direction: column;
 
     h2 {
-        color: rgba(250, 220, 167, 1);
+        color: $color-accent-dark;
     }
 }
