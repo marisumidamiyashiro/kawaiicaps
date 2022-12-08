@@ -149,11 +149,17 @@ section {
 /* FOOTER */
 
 .site-footer {
-    color: white;
+    color: $color-accent-light;
     display: flex;
-    flex-direction: column;
 
     h2 {
         color: $color-accent-dark;
+    }
+
+    .form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 2em;
     }
 }
