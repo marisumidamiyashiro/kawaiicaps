@@ -1,4 +1,5 @@
 /* GLOBAL RESETS */
+
 * {box-sizing: border-box;}
 
 // VARIABLES
@@ -21,22 +22,19 @@ $breakpoint-small: 768px;
 $breakpoint-medium: 1050px;
 $breakpoint-large: 1250px;
 
-
-// BORDER RADIUS
-
-$border-radius: 25px;
-
 // IMPORTS
 
 @import "partials/toc";
 @import "partials/typography";
 @import "partials/helpers";
 @import "partials/button";
+@import "partials/sitenav";
 @import "partials/media";
 @import "partials/layout";
 @import "partials/grid";
-@import "partials/structure";
-@import "partials/sitenav";
 @import "partials/form";
+@import "partials/structure";
+
+
 @import "partials/animation";
 

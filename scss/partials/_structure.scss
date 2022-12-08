@@ -99,8 +99,8 @@ section {
     background: linear-gradient(180deg, rgba(254,218,196,1) 0%, rgba(0,0,0,1) 100%);
 
     img {
-        margin: $border-radius;
-        border-radius: $border-radius;
+        margin: 25px;
+        border-radius: 25px;
         transition: all .2s ease-in;
     }
 
@@ -136,8 +136,8 @@ section {
     list-style: none;
 
     img {
-        margin: $border-radius;
-        border-radius: $border-radius;
+        margin: 25px;
+        border-radius: 25px;
         transition: all .2s ease-in;
     }
 

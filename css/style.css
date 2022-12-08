@@ -211,6 +211,96 @@ hr {
 		transform: translate3d(0, 0, -1em);
 }
 
+/* SITE-HEADER SITE-NAV */
+.site-header .site-nav .menu-button {
+		position: absolute;
+		top: 0.75em;
+		right: 0.75em;
+		color: rgb(80, 54, 42);
+		margin: 0;
+		font-size: 1.5em;
+		line-height: 1;
+		z-index: 500;
+		cursor: pointer;
+}
+.site-header .site-nav .menu-button svg {
+		fill: rgb(80, 54, 42);
+}
+.site-header .site-nav .menu-button svg rect {
+		transition: all 0.3s ease-out;
+}
+.site-header .site-nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		background-color: rgb(80, 54, 42);
+		color: rgb(255, 245, 228);
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 50%;
+		height: 100vh;
+		border-radius: 25px 0 0 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		transform: translate(100%, 0);
+		transition: all 0.3s ease-out;
+}
+.site-header .site-nav li {
+		font-size: 4vw;
+		min-width: 20vw;
+		transform: translate(10%, 0);
+		transition: all 0.3s ease-out 0.3s;
+		opacity: 0;
+		margin-left: 10vw;
+}
+.site-header .site-nav a {
+		color: rgb(255, 245, 228);
+		font-family: puffin-arcade-liquid, sans-serif;
+}
+.site-header .site-nav a:hover {
+		color: rgb(250, 220, 167);
+}
+.site-header .site-nav[data-navstate=open] .menu-button {
+		position: fixed;
+}
+.site-header .site-nav[data-navstate=open] .menu-button svg {
+		fill: rgb(255, 245, 228);
+}
+.site-header .site-nav[data-navstate=open] #menubar-top {
+		transform-origin: center;
+		transform: translate(7px, 7px) rotate(-45deg);
+}
+.site-header .site-nav[data-navstate=open] #menubar-mid {
+		opacity: 0;
+}
+.site-header .site-nav[data-navstate=open] #menubar-bottom {
+		transform-origin: center;
+		transform: translate(0, -4px) rotate(45deg);
+}
+.site-header .site-nav[data-navstate=open] ul {
+		transform: translate(0, 0);
+}
+.site-header .site-nav[data-navstate=open] li {
+		transform: translate(0, 0);
+		opacity: 1;
+}
+
+/* FOOTER SITE-NAV */
+.site-footer .site-nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+}
+.site-footer .site-nav a {
+		display: inline-block;
+		padding: 1em;
+		line-height: 1;
+}
+
 /* RESPONSIVE IMAGES */
 img {
 		max-width: 100%;
@@ -313,6 +403,42 @@ body {
 .demo .row > * {
 		background-color: rgba(0, 0, 0, 0.1);
 		padding: 1%;
+}
+
+form {
+		max-width: 1000px;
+		margin: 2em auto;
+}
+
+form label,
+form input,
+form textarea {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		font-size: 1em;
+}
+
+form input[type=text],
+form textarea {
+		border: 1px solid #ccc;
+		padding: 0.5em;
+		color: #666;
+}
+
+form textarea {
+		min-height: 10em;
+		line-height: 1.5;
+}
+
+form label {
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+}
+
+form input[type=submit] {
+		margin-top: 1.5em;
+		width: auto;
 }
 
 /* SITE STRUCTURE */
@@ -448,132 +574,6 @@ section {
 }
 .site-footer h2 {
 		color: rgb(250, 220, 167);
-}
-
-/* SITE-HEADER SITE-NAV */
-.site-header .site-nav .menu-button {
-		position: absolute;
-		top: 0.75em;
-		right: 0.75em;
-		color: rgb(80, 54, 42);
-		margin: 0;
-		font-size: 1.5em;
-		line-height: 1;
-		z-index: 500;
-		cursor: pointer;
-}
-.site-header .site-nav .menu-button svg {
-		fill: rgb(80, 54, 42);
-}
-.site-header .site-nav .menu-button svg rect {
-		transition: all 0.3s ease-out;
-}
-.site-header .site-nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		background-color: rgb(80, 54, 42);
-		color: rgb(255, 245, 228);
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 50%;
-		height: 100vh;
-		border-radius: 25px 0 0 25px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		transform: translate(100%, 0);
-		transition: all 0.3s ease-out;
-}
-.site-header .site-nav li {
-		font-size: 4vw;
-		min-width: 20vw;
-		transform: translate(10%, 0);
-		transition: all 0.3s ease-out 0.3s;
-		opacity: 0;
-		margin-left: 10vw;
-}
-.site-header .site-nav a {
-		color: rgb(255, 245, 228);
-		font-family: puffin-arcade-liquid, sans-serif;
-}
-.site-header .site-nav a:hover {
-		color: rgb(250, 220, 167);
-}
-.site-header .site-nav[data-navstate=open] .menu-button {
-		position: fixed;
-}
-.site-header .site-nav[data-navstate=open] .menu-button svg {
-		fill: rgb(255, 245, 228);
-}
-.site-header .site-nav[data-navstate=open] #menubar-top {
-		transform-origin: center;
-		transform: translate(7px, 7px) rotate(-45deg);
-}
-.site-header .site-nav[data-navstate=open] #menubar-mid {
-		opacity: 0;
-}
-.site-header .site-nav[data-navstate=open] #menubar-bottom {
-		transform-origin: center;
-		transform: translate(0, -4px) rotate(45deg);
-}
-.site-header .site-nav[data-navstate=open] ul {
-		transform: translate(0, 0);
-}
-.site-header .site-nav[data-navstate=open] li {
-		transform: translate(0, 0);
-		opacity: 1;
-}
-
-/* FOOTER SITE-NAV */
-.site-footer .site-nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		display: flex;
-}
-.site-footer .site-nav a {
-		display: inline-block;
-		padding: 1em;
-		line-height: 1;
-}
-
-form {
-		max-width: 1000px;
-		margin: 2em auto;
-}
-
-form label,
-form input,
-form textarea {
-		box-sizing: border-box;
-		display: block;
-		width: 100%;
-		font-size: 1em;
-}
-
-form input[type=text],
-form textarea {
-		border: 1px solid #ccc;
-		padding: 0.5em;
-		color: #666;
-}
-
-form textarea {
-		min-height: 10em;
-		line-height: 1.5;
-}
-
-form label {
-		margin-top: 1em;
-		margin-bottom: 0.5em;
-}
-
-form input[type=submit] {
-		margin-top: 1.5em;
-		width: auto;
 }
 
 /* CSS ANIMATIONS */
