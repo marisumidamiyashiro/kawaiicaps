@@ -62,11 +62,8 @@
                 
                 <h2>Featured Products</h2>
 
-                    <img src="img/SootSprite.jpg" width="200px" alt="Soot Sprite Keycap">
-                    <img src="img/Keroppi.jpg" width="200px" alt="Keroppi Keycap">
-                    <img src="img/Slime.jpg" width="200px" alt="Maplestory Slime Keycap">
+                    <img class="thumbnail-overlay" src="img/SootSprite.jpg" width="200px" alt="Soot Sprite Keycap">
 
-                
                 </div>
 
             </div>
@@ -124,25 +121,38 @@
 
     <footer id="contact" class="site-footer">
         <div class="container">
-            <div class="one-half">
-                <a class="logomark" href="#home"><img src="img/KawaiiCaps_Logo.svg" alt="KawaiiCaps Logo" width="100"></a>
-                <h2>Contact Us</h2>
-                <img src="img/KawaiiCaps_Computer.svg" alt="computer" width="300">
-            </div>
-            <div class="one-half">
-                <form>
+            <div class="row">
+                <div class="one-third">
+                    <a class="logomark" href="#home"><img src="img/KawaiiCaps_Logo.svg" alt="KawaiiCaps Logo" width="100px"></a>
+                    <h2>Contact Us</h2>
+                    <img class="computer" src="img/KawaiiCaps_Computer.svg" alt="computer" width="500px">
+                    <ul>
+                        <li>
+                            <img src="img/facebook.svg" alt="Facebook Logo" width="50px">
+                            <img src="img/youtube.svg" alt="Facebook Logo" width="50px">
+                        </li>
+                        <li>   
+                            <img src="img/instagram.svg" alt="Facebook Logo" width="50px">
+                            <img src="img/twitter.svg" alt="Facebook Logo" width="50px">
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="two-thirds">
+                    <form>
 
                     <label for="contact_name">Name:</label>
-                    <input type="text" id="contact_name" name="contact_name" />
-        
-                    <label for="email">Email Address:</label>
-                    <input type="text" id="contact_email" name="contact_email" />
-        
-                    <label for="contact_message">Message:</label>
-                    <textarea type="text" id="contact_message" name="contact_message"></textarea>
-        
-                    <a href="contact" class="submit-button">Submit</a>
-                </form>
+                        <input type="text" id="contact_name" name="contact_name" placeholder="John Doe"/>
+                
+                        <label for="email">Email Address:</label>
+                        <input type="text" id="contact_email" name="contact_email" placeholder="youremail@email.com"/>
+                
+                        <label for="contact_message">Message:</label>
+                        <textarea type="text" id="contact_message" name="contact_message" placeholder="Hello! Please enter your message here. Let us know how you liked our products or any feedback you may have! "></textarea>
+                
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </div>
         

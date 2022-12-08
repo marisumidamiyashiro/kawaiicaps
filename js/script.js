@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     };
 
+
     // SCROLL TRIGGERED ANIMATION
 
     let options = {
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll(".scroll-triggered").forEach((el) => {
         myobserver.observe(el);
     });
+
 
 
 });

@@ -6,7 +6,8 @@ form {
 form label,
 form input,
 form textarea {
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 		display: block;
 		width: 100%;
 		font-size: 1em;
