@@ -1,7 +1,20 @@
 let descriptions ={
-    "soot sprite":"An adorable soot sprite inspired by Miyazaki's Spirited Away and My Neighbor Totoro.",
-    "Animal Crossing Leaf & Bells":"The cat looks at what it just knocked off the counter",
-    "wtf":"The cat is startled"
+    "Bulbasaur":"Who's that Pokemon? It's Bulbasaur! Well, his back anyway.",
+    "Pikachu":"Who's that Pokemon? Everyone knows this electifying mouse. But it's actually a keycap.",
+    "Maplestory Slime":"This gelatinous monster is adorable and drops apple scented liquid when defeated (but not really.. please keep it alive).",
+    "Animal Crossing Fossil":"From the Animal Crossing franchise, this fossil will be the perfect addition to your keyboard, and pairs nicely with the \"Leaf and Bells\".",
+    "Animal Crossing Leaf & Bells":"From the Animal Crossing franchise, this shift key will pair nicely with the \"Fossil\".",
+    "Badtz Maru":"One of the more notable Sanrio characters, Badtz Maru hopes to one day be \"The boss, of everything\".",
+    "Gudetama":"This lazy egg would love nothing more than to lounge on your keyboard all day.",
+    "Keroppi":"Hoping to hop his way into your heart and onto your keyboard is KeroKeroKeroppi!",
+    "My Melody":"This adorable Sanrio bunny would love to sit on your keyboard as long as you share your almond pound cake with her.",
+    "PomPomPurin":"When he's not collecting and hiding your shoes he'd definitely like to stay by your side and share a pudding cup.",
+    "Bun Bun":"Bun Bun the bunny will make sure to stay out of your \"hare\".",
+    "Cat in a Box":"A mischievous cat that's up to no good. Y'know. Cat stuff.",
+    "Coffee Cup":"For all the coffee lovers out there!",
+    "Pumpkin":"A cute pumpkin perfect for the Fall season!",
+    "Soot Sprite":"An adorable soot sprite inspired by Miyazaki's \"Spirited Away\" and \"My Neighbor Totoro\"."
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
