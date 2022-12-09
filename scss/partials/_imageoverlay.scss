@@ -2,7 +2,7 @@
 /* IMAGE OVERLAY DISPLAY */
 
 .overlay {
-    z-index: 99;
+    z-index: 5;
     position: absolute;
 
     svg {
@@ -34,7 +34,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
         padding: 1em 1em 0 1em;
 
     }
@@ -54,6 +53,10 @@
 
         img, p {
             margin: 3em;
+        }
+
+        p {
+            text-align: center;
         }
     
     }

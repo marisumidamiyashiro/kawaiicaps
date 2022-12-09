@@ -268,13 +268,32 @@ body {
 		background: rgb(80, 54, 42);
 		color: rgb(174, 137, 128);
 }
-.site-footer h2 {
+.site-footer .footer-title {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding: 1.5em;
+}
+.site-footer .footer-title h1 {
 		color: rgb(250, 220, 167);
+		padding-left: 2em;
+}
+.site-footer .one-half {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 }
 .site-footer p {
 		text-align: center;
 		margin: 0;
 		padding: 0;
+		cursor: pointer;
 }
 .site-footer a {
 		color: rgb(80, 54, 42);
@@ -283,20 +302,21 @@ body {
 .site-footer a:hover {
 		color: rgb(255, 245, 228);
 }
-.site-footer img.computer {
-		position: relative;
-}
 .site-footer ul {
 		list-style: none;
-		position: absolute;
-		margin: -17.5em 1.5em;
 }
 .site-footer ul img {
-		margin: 1em;
+		margin: 0 1em;
 		cursor: pointer;
 }
+.site-footer ul img:hover {
+		filter: gray;
+		-webkit-filter: grayscale(1);
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+}
 .site-footer form {
-		margin: 2em auto;
+		margin: 2em;
 }
 .site-footer form label, .site-footer form input, .site-footer form textarea {
 		display: block;
@@ -304,7 +324,7 @@ body {
 .site-footer form input[type=text], .site-footer form textarea {
 		border: 3px solid rgb(174, 137, 128);
 		border-radius: 25px;
-		width: 600px;
+		width: 50vh;
 		padding: 1em;
 		color: rgb(80, 54, 42);
 }
@@ -390,8 +410,7 @@ section {
 .featured .featured-product {
 		position: relative;
 }
-
-.featured-product-cards {
+.featured .featured-product-cards {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -404,13 +423,13 @@ section {
 		        justify-content: space-between;
 		list-style: none;
 }
-.featured-product-cards img {
+.featured .featured-product-cards img {
 		padding: 1em;
 		border-radius: 25px;
 		-webkit-transition: all 0.2s ease-in;
 		transition: all 0.2s ease-in;
 }
-.featured-product-cards img:hover {
+.featured .featured-product-cards img:hover {
 		-webkit-transform: scale(1.2);
 		        transform: scale(1.2);
 }
@@ -582,6 +601,9 @@ form input[type=submit]:active::before {
 
 /* DISPLAY OVERLAY BUTTON */
 /* SITE-HEADER SITE-NAV */
+.site-header .site-nav {
+		z-index: 10;
+}
 .site-header .site-nav .menu-button {
 		position: absolute;
 		top: 0.75em;
@@ -590,7 +612,7 @@ form input[type=submit]:active::before {
 		margin: 0;
 		font-size: 1.5em;
 		line-height: 1;
-		z-index: 1000;
+		z-index: 15;
 		cursor: pointer;
 }
 .site-header .site-nav .menu-button svg {
@@ -843,7 +865,7 @@ form input[type=submit]:active::before {
 }
 /* IMAGE OVERLAY DISPLAY */
 .overlay {
-		z-index: 99;
+		z-index: 5;
 		position: absolute;
 }
 .overlay svg {
@@ -883,9 +905,6 @@ form input[type=submit]:active::before {
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
 		padding: 1em 1em 0 1em;
 }
 .overlay .overlay-description {
@@ -909,6 +928,9 @@ form input[type=submit]:active::before {
 }
 .overlay .overlay-description img, .overlay .overlay-description p {
 		margin: 3em;
+}
+.overlay .overlay-description p {
+		text-align: center;
 }
 
 /* HELPERS */

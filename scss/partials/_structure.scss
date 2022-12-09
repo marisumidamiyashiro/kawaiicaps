@@ -32,14 +32,27 @@
     background: $color-body-primary-dark;
     color: $color-accent-light;
 
-    h2 {
-        color: $color-accent-dark;
+    .footer-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em;
+
+        h1 {
+            color: $color-accent-dark;
+            padding-left: 2em;
+        }
+    }
+
+    .one-half {
+        justify-content: center;
     }
 
     p {
         text-align: center;
         margin: 0;
         padding: 0;
+        cursor: pointer;
     }
 
     a {
@@ -51,24 +64,24 @@
         color: $color-body-primary-light;
     }
 
-    img.computer {
-        position: relative;
-    }
-
     ul {
         list-style: none;
-        position: absolute;
-        margin: -17.5em 1.5em;
 
         img {
-            margin: 1em;
+            margin: 0 1em;
             cursor: pointer;
+        }
+
+        img:hover {
+            filter: gray;
+            -webkit-filter: grayscale(1);
+            transition: all .3s ease-out;
         }
 
     }
 
     form {
-        margin: 2em auto;
+        margin: 2em;
 
         label, input, textarea {
             display: block;
@@ -77,7 +90,7 @@
         input[type="text"], textarea {
             border: 3px solid $color-accent-light;
             border-radius: 25px;
-            width: 600px;
+            width: 50vh;
             padding: 1em;
             color: $color-body-primary-dark;
         }
@@ -163,22 +176,22 @@ section {
     .featured-product {
         position: relative;
     }
-}
 
-.featured-product-cards  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-
-    img {
-        padding: 1em;
-        border-radius: 25px;
-        transition: all .2s ease-in;
-    }
-
-    img:hover {
-        transform: scale(1.2);
+    .featured-product-cards  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    
+        img {
+            padding: 1em;
+            border-radius: 25px;
+            transition: all .2s ease-in;
+        }
+    
+        img:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
