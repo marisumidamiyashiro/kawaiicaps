@@ -1,6 +1,6 @@
 let descriptions ={
-    "soot sprite":"The cat judges you harshly",
-    "look":"The cat looks at what it just knocked off the counter",
+    "soot sprite":"An adorable soot sprite inspired by Miyazaki's Spirited Away and My Neighbor Totoro.",
+    "Animal Crossing Leaf & Bells":"The cat looks at what it just knocked off the counter",
     "wtf":"The cat is startled"
 }
 
@@ -55,10 +55,15 @@ document.addEventListener('DOMContentLoaded', function () {
 $(document).ready(function(){
 
     $(".image-overlay").click(function() {
-        console.log("test")
         let clicked = getObject($(this))
-        createOverlay(clicked)
-    })
+        createFeaturedOverlay(clicked)
+        })
+
+        $(".product-overlay").click(function() {
+            let clicked = getObject($(this))
+            createProductOverlay(clicked)
+        })
+
 })
 
     let getObject = (image) =>{
@@ -72,11 +77,11 @@ $(document).ready(function(){
         }
     }
 
-    let createOverlay = (obj) =>{
-        let overlay = $("<div class='overlay'>");
+    let createFeaturedOverlay = (obj) =>{
+        let overlay = $("<div class='overlay fade-in'>");
         let header = $("<div class='overlay-header'>");
-        header.append($("<h1>"+obj.title+"</h1>"));
-        let close = $("<button>X</button>")
+        header.append($("<h2>"+obj.title+"</h2>"));
+        let close = $("<svg width='30' height='30'><rect id='overlay-top' y='0' width='30' height='3'></rect><rect id='overlay-bottom' y='16' width='30' height='3'></rect></svg>")
         close.click(function(){
             $(".overlay").remove()
         })
@@ -87,5 +92,23 @@ $(document).ready(function(){
         content.append($("<p>"+obj.desc+"</p>"));
         overlay.append(content);
         $(".featured-product").append(overlay)
+
+    }
+
+    let createProductOverlay = (obj) =>{
+        let overlay = $("<div class='overlay fade-in'>");
+        let header = $("<div class='overlay-header'>");
+        header.append($("<h2>"+obj.title+"</h2>"));
+        let close = $("<svg width='30' height='30'><rect id='overlay-top' y='0' width='30' height='3'></rect><rect id='overlay-bottom' y='16' width='30' height='3'></rect></svg>")
+        close.click(function(){
+            $(".overlay").remove()
+        })
+        header.append(close);
+        overlay.append(header)
+        let content=$("<div class='overlay-description'>");
+        content.append($("<img src='"+obj.pic+"'>"));
+        content.append($("<p>"+obj.desc+"</p>"));
+        overlay.append(content);
+        $(".keycap-product").append(overlay)
 
     }

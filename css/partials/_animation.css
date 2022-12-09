@@ -133,3 +133,31 @@
 		padding: 3em;
 		border-radius: 25px;
 }
+
+/* ANIMATE IMAGE OVERLAY ON CLICK */
+.fade-in {
+		-webkit-animation-name: FadeIn;
+		        animation-name: FadeIn;
+		-webkit-animation-duration: 0.5s;
+		        animation-duration: 0.5s;
+		-webkit-transition-timing-function: linear;
+		        transition-timing-function: linear;
+}
+
+@-webkit-keyframes FadeIn {
+		0% {
+				opacity: 0;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+
+@keyframes FadeIn {
+		0% {
+				opacity: 0;
+		}
+		100% {
+				opacity: 1;
+		}
+}

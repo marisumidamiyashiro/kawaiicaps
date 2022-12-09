@@ -1,3 +1,65 @@
 
-/* IMAGE OVERLAY */
+/* IMAGE OVERLAY DISPLAY */
+
+.overlay {
+    z-index: 99;
+    position: absolute;
+
+    svg {
+        position: absolute;
+        top: 1.5em;
+        right: 1.5em;
+        fill: $color-body-primary-dark;
+        cursor: pointer;
+
+        rect {
+            transition: all .3s ease-out;
+        }
+
+        #overlay-top {
+            transform-origin: center;
+            transform: translate(7px,7px) rotate(-45deg);
+        }
+
+        #overlay-bottom {
+            transform-origin: center;
+            transform: translate(0, -4px) rotate(45deg);
+        }
+    }
+
+    .overlay-header {
+        background-color: $color-accent-light;
+        border: 3px solid $color-body-primary-dark;
+        border-radius: 25px 25px 0 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 1em 0 1em;
+
+    }
+
+    .overlay-description {
+        background-color: $color-body-primary-light;
+        border: 3px solid $color-body-primary-dark;
+        border-radius: 0 0 25px 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            border-radius: 25px;
+            width: 30vh;
+        }
+
+        img, p {
+            margin: 3em;
+        }
+    
+    }
+
+}
+
+
+
 

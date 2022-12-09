@@ -29,7 +29,6 @@
 
 .site-footer {
     display: flex;
-    justify-content: space-between;
     background: $color-body-primary-dark;
     color: $color-accent-light;
 
@@ -161,12 +160,33 @@ section {
     img {
         cursor: pointer;
     }
+    .featured-product {
+        position: relative;
+    }
+}
+
+.featured-product-cards  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+
+    img {
+        padding: 1em;
+        border-radius: 25px;
+        transition: all .2s ease-in;
+    }
+
+    img:hover {
+        transform: scale(1.2);
+    }
 }
 
 
 /* ABOUT US */
 
 .aboutus {
+    position: relative;
     background-image: url("../img/KawaiiCaps_Hero3.jpg");
     background-position: center;
     background-size: cover;
@@ -175,6 +195,7 @@ section {
     text-align: left;
     min-height: 100vh;
     display: flex;
+    z-index: 1;
 }
 
 /* PRODUCTS */
@@ -182,22 +203,27 @@ section {
 .products {
     background: $color-body-primary-light;
 
-    h2 {
+    h1 {
         text-align: center;
         padding: 1.5em;
     }
+
+    .keycap-product {
+        position: relative;
+    }
 }
 
-.product-cards {
+.product-cards  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
 
     img {
-        margin: 25px;
+        padding: .5em;
         border-radius: 25px;
         transition: all .2s ease-in;
+        cursor: pointer;
     }
 
     img:hover {

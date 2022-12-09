@@ -265,9 +265,6 @@ body {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
 		background: rgb(80, 54, 42);
 		color: rgb(174, 137, 128);
 }
@@ -390,9 +387,37 @@ section {
 .featured img {
 		cursor: pointer;
 }
+.featured .featured-product {
+		position: relative;
+}
+
+.featured-product-cards {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		list-style: none;
+}
+.featured-product-cards img {
+		padding: 1em;
+		border-radius: 25px;
+		-webkit-transition: all 0.2s ease-in;
+		transition: all 0.2s ease-in;
+}
+.featured-product-cards img:hover {
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
+}
 
 /* ABOUT US */
 .aboutus {
+		position: relative;
 		background-image: url("../img/KawaiiCaps_Hero3.jpg");
 		background-position: center;
 		background-size: cover;
@@ -403,15 +428,19 @@ section {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		z-index: 1;
 }
 
 /* PRODUCTS */
 .products {
 		background: rgb(255, 245, 228);
 }
-.products h2 {
+.products h1 {
 		text-align: center;
 		padding: 1.5em;
+}
+.products .keycap-product {
+		position: relative;
 }
 
 .product-cards {
@@ -428,10 +457,11 @@ section {
 		list-style: none;
 }
 .product-cards img {
-		margin: 25px;
+		padding: 0.5em;
 		border-radius: 25px;
 		-webkit-transition: all 0.2s ease-in;
 		transition: all 0.2s ease-in;
+		cursor: pointer;
 }
 .product-cards img:hover {
 		-webkit-transform: scale(1.2);
@@ -550,6 +580,7 @@ form input[type=submit]:active::before {
 		        transform: translate3d(0, 0, -1em);
 }
 
+/* DISPLAY OVERLAY BUTTON */
 /* SITE-HEADER SITE-NAV */
 .site-header .site-nav .menu-button {
 		position: absolute;
@@ -559,7 +590,7 @@ form input[type=submit]:active::before {
 		margin: 0;
 		font-size: 1.5em;
 		line-height: 1;
-		z-index: 500;
+		z-index: 1000;
 		cursor: pointer;
 }
 .site-header .site-nav .menu-button svg {
@@ -783,7 +814,103 @@ form input[type=submit]:active::before {
 		border-radius: 25px;
 }
 
-/* IMAGE OVERLAY */
+/* ANIMATE IMAGE OVERLAY ON CLICK */
+.fade-in {
+		-webkit-animation-name: FadeIn;
+		        animation-name: FadeIn;
+		-webkit-animation-duration: 0.5s;
+		        animation-duration: 0.5s;
+		-webkit-transition-timing-function: linear;
+		        transition-timing-function: linear;
+}
+
+@-webkit-keyframes FadeIn {
+		0% {
+				opacity: 0;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+
+@keyframes FadeIn {
+		0% {
+				opacity: 0;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+/* IMAGE OVERLAY DISPLAY */
+.overlay {
+		z-index: 99;
+		position: absolute;
+}
+.overlay svg {
+		position: absolute;
+		top: 1.5em;
+		right: 1.5em;
+		fill: rgb(80, 54, 42);
+		cursor: pointer;
+}
+.overlay svg rect {
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+}
+.overlay svg #overlay-top {
+		-webkit-transform-origin: center;
+		        transform-origin: center;
+		-webkit-transform: translate(7px, 7px) rotate(-45deg);
+		        transform: translate(7px, 7px) rotate(-45deg);
+}
+.overlay svg #overlay-bottom {
+		-webkit-transform-origin: center;
+		        transform-origin: center;
+		-webkit-transform: translate(0, -4px) rotate(45deg);
+		        transform: translate(0, -4px) rotate(45deg);
+}
+.overlay .overlay-header {
+		background-color: rgb(174, 137, 128);
+		border: 3px solid rgb(80, 54, 42);
+		border-radius: 25px 25px 0 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		padding: 1em 1em 0 1em;
+}
+.overlay .overlay-description {
+		background-color: rgb(255, 245, 228);
+		border: 3px solid rgb(80, 54, 42);
+		border-radius: 0 0 25px 25px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+.overlay .overlay-description img {
+		border-radius: 25px;
+		width: 30vh;
+}
+.overlay .overlay-description img, .overlay .overlay-description p {
+		margin: 3em;
+}
+
 /* HELPERS */
 .hide-visually {
 		position: absolute;
