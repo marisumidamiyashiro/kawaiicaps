@@ -1,3 +1,9 @@
+let descriptions ={
+    "soot sprite":"The cat judges you harshly",
+    "look":"The cat looks at what it just knocked off the counter",
+    "wtf":"The cat is startled"
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 
     // OVERLAY NAV MENU SHOW/HIDE
@@ -23,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     };
 
-
     // SCROLL TRIGGERED ANIMATION
 
     let options = {
@@ -43,6 +48,44 @@ document.addEventListener('DOMContentLoaded', function () {
         myobserver.observe(el);
     });
 
-
-
 });
+
+//waits for page to load
+
+$(document).ready(function(){
+
+    $(".image-overlay").click(function() {
+        console.log("test")
+        let clicked = getObject($(this))
+        createOverlay(clicked)
+    })
+})
+
+    let getObject = (image) =>{
+        let title = image.attr("id")
+        let pic = image.attr("src")
+        return {
+            title:title,
+            pic:pic,
+            desc:descriptions[title]
+            
+        }
+    }
+
+    let createOverlay = (obj) =>{
+        let overlay = $("<div class='overlay'>");
+        let header = $("<div class='overlay-header'>");
+        header.append($("<h1>"+obj.title+"</h1>"));
+        let close = $("<button>X</button>")
+        close.click(function(){
+            $(".overlay").remove()
+        })
+        header.append(close);
+        overlay.append(header)
+        let content=$("<div class='overlay-description'>");
+        content.append($("<img src='"+obj.pic+"'>"));
+        content.append($("<p>"+obj.desc+"</p>"));
+        overlay.append(content);
+        $(".featured-product").append(overlay)
+
+    }

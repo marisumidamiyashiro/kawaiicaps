@@ -274,6 +274,11 @@ body {
 .site-footer h2 {
 		color: rgb(250, 220, 167);
 }
+.site-footer p {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+}
 .site-footer a {
 		color: rgb(80, 54, 42);
 		text-decoration: none;
@@ -383,8 +388,6 @@ section {
 		background: linear-gradient(180deg, rgb(254, 218, 196) 0%, rgb(0, 0, 0) 100%);
 }
 .featured img {
-		margin: 25px;
-		border-radius: 25px;
 		cursor: pointer;
 }
 
@@ -406,11 +409,19 @@ section {
 .products {
 		background: rgb(255, 245, 228);
 }
+.products h2 {
+		text-align: center;
+		padding: 1.5em;
+}
 
 .product-cards {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
@@ -423,8 +434,8 @@ section {
 		transition: all 0.2s ease-in;
 }
 .product-cards img:hover {
-		-webkit-transform: scale(1.5);
-		        transform: scale(1.5);
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
 }
 
 /* BUTTONS */
@@ -772,6 +783,7 @@ form input[type=submit]:active::before {
 		border-radius: 25px;
 }
 
+/* IMAGE OVERLAY */
 /* HELPERS */
 .hide-visually {
 		position: absolute;

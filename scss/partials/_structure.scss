@@ -37,6 +37,12 @@
         color: $color-accent-dark;
     }
 
+    p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
     a {
         color: $color-body-primary-dark;
         text-decoration: none;
@@ -151,13 +157,10 @@ section {
     text-align: center;
     background: rgb(252,228,208);
     background: linear-gradient(180deg, rgba(254,218,196,1) 0%, rgba(0,0,0,1) 100%);
-
+    
     img {
-        margin: 25px;
-        border-radius: 25px;
         cursor: pointer;
     }
-
 }
 
 
@@ -178,10 +181,16 @@ section {
 
 .products {
     background: $color-body-primary-light;
+
+    h2 {
+        text-align: center;
+        padding: 1.5em;
+    }
 }
 
 .product-cards {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     list-style: none;
 
@@ -192,6 +201,6 @@ section {
     }
 
     img:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }

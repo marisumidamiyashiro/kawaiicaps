@@ -1,0 +1,20 @@
+/* IMAGE OVERLAY */
+.featuredproducts ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+.featuredproducts ul .sootoverlay {
+		background-color: rgba(0, 0, 0, 0.1);
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translate(100%, 0);
+		transition: all 0.3s ease-out;
+}
+.featuredproducts ul .sootoverlay[data-navstate=open] {
+		transform: translate(0, 0);
+		opacity: 1;
+}
