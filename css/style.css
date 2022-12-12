@@ -324,7 +324,7 @@ body {
 .site-footer form input[type=text], .site-footer form textarea {
 		border: 3px solid rgb(174, 137, 128);
 		border-radius: 25px;
-		width: 30vw;
+		width: 50vw;
 		padding: 1em;
 		color: rgb(80, 54, 42);
 }
@@ -352,6 +352,12 @@ section {
 		        align-items: center;
 }
 
+@media (min-width: 768px) {
+		.site-footer form input[type=text], .site-footer form textarea {
+				width: 20vw;
+				display: block;
+		}
+}
 /* HERO SECTION */
 .hero {
 		background-image: url("../img/KawaiiCaps_Hero.jpg");
@@ -411,16 +417,7 @@ section {
 		position: relative;
 }
 .featured .featured-product-cards {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		display: block;
 		list-style: none;
 }
 .featured .featured-product-cards img {
@@ -434,6 +431,20 @@ section {
 		        transform: scale(1.2);
 }
 
+@media (min-width: 768px) {
+		.featured .featured-product-cards {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				-webkit-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
+		}
+}
 /* ABOUT US */
 .aboutus {
 		position: relative;
@@ -917,12 +928,11 @@ form input[type=submit]:active::before {
 }
 .overlay .overlay-description img {
 		border-radius: 25px;
-		width: 30vh;
-		margin: 2em 0 0 7em;
+		padding: 1em;
 }
 .overlay .overlay-description p {
-		margin: 3em;
 		text-align: center;
+		padding: 1em;
 }
 
 @media (min-width: 768px) {
