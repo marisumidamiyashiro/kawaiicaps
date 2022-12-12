@@ -42,25 +42,37 @@
         background-color: $color-body-primary-light;
         border: 3px solid $color-body-primary-dark;
         border-radius: 0 0 25px 25px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: block;
+        align-content: center;
 
         img {
             border-radius: 25px;
             width: 30vh;
-        }
-
-        img, p {
-            margin: 3em;
+            margin: 2em 0 0 7em;
         }
 
         p {
+            margin: 3em;
             text-align: center;
         }
+
     
     }
 
+}
+
+@media (min-width: $breakpoint-small) {
+    .overlay .overlay-description {
+        background-color: $color-body-primary-light;
+        border: 3px solid $color-body-primary-dark;
+        border-radius: 0 0 25px 25px;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin: 3em;
+        }
+    }
 }
 
 
