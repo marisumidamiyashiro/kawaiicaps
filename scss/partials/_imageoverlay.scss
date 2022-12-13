@@ -46,13 +46,12 @@
         align-content: center;
 
         img {
-            border-radius: 25px;
-            padding: 1em;
+            border-radius: 30px;
         }
 
-        p {
+        img, p {
             text-align: center;
-            padding: 1em;
+            padding: 1.5em;
         }
 
     }
@@ -69,6 +68,7 @@
 
         img {
             margin: 3em;
+            width: 20vw;
         }
     }
 }

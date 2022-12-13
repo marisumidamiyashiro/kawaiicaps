@@ -927,12 +927,11 @@ form input[type=submit]:active::before {
 		    align-content: center;
 }
 .overlay .overlay-description img {
-		border-radius: 25px;
-		padding: 1em;
+		border-radius: 30px;
 }
-.overlay .overlay-description p {
+.overlay .overlay-description img, .overlay .overlay-description p {
 		text-align: center;
-		padding: 1em;
+		padding: 1.5em;
 }
 
 @media (min-width: 768px) {
@@ -949,6 +948,7 @@ form input[type=submit]:active::before {
 		}
 		.overlay .overlay-description img {
 				margin: 3em;
+				width: 20vw;
 		}
 }
 /* HELPERS */
